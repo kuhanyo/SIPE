@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WINDOWS-10\\Documents\\SIPE_PVVC\\SIPE\\SIPE.csproj": {}
+    "C:\\Users\\WINDOWS-10\\Pictures\\SIPE\\SIPE\\SIPE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WINDOWS-10\\Documents\\SIPE_PVVC\\SIPE\\SIPE.csproj": {
+    "C:\\Users\\WINDOWS-10\\Pictures\\SIPE\\SIPE\\SIPE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WINDOWS-10\\Documents\\SIPE_PVVC\\SIPE\\SIPE.csproj",
+        "projectUniqueName": "C:\\Users\\WINDOWS-10\\Pictures\\SIPE\\SIPE\\SIPE.csproj",
         "projectName": "SIPE",
-        "projectPath": "C:\\Users\\WINDOWS-10\\Documents\\SIPE_PVVC\\SIPE\\SIPE.csproj",
+        "projectPath": "C:\\Users\\WINDOWS-10\\Pictures\\SIPE\\SIPE\\SIPE.csproj",
         "packagesPath": "C:\\Users\\WINDOWS-10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WINDOWS-10\\Documents\\SIPE_PVVC\\SIPE\\obj\\",
+        "outputPath": "C:\\Users\\WINDOWS-10\\Pictures\\SIPE\\SIPE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

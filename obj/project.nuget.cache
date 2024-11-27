@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hPQXNKK0+dA=",
+  "dgSpecHash": "AY9s/Lfw7yA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\WINDOWS-10\\Documents\\SIPE_PVVC\\SIPE\\SIPE.csproj",
+  "projectFilePath": "C:\\Users\\WINDOWS-10\\Pictures\\SIPE\\SIPE\\SIPE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\WINDOWS-10\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\WINDOWS-10\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
