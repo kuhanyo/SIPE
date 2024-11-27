@@ -32,7 +32,7 @@ namespace SIPE.Controllers
         {
             var empleados = new List<Empleado>();
 
-            // Llama al stored procedure ..
+            // Llama al stored procedure 
             var dt = _sqlHelper.ExecuteStoredProcedure("spSELECT_Prueba");
 
             // Mapea el DataTable a una lista de empleados
