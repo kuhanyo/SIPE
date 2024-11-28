@@ -49,5 +49,6 @@ namespace SIPE.Controllers
             // Retorna la lista de empleados como JSON
             return Json(empleados);
         }
+        //hola
     }
 }
