@@ -17,10 +17,20 @@ namespace SIPE.Controllers
             _sqlHelper = sqlHelper;
         }
 
-        public IActionResult Index()
+        public IActionResult Inicio()
         {
             return View();
         }
+
+        public IActionResult Index()
+        {
+            // Ejemplo de datos obtenidos desde la base de datos
+            ViewData["PeriodoIngreso"] = "2021-1";
+            ViewData["PeriodoEgreso"] = "2025-2";
+
+            return View();
+        }
+
 
         public IActionResult Privacy()
         {
