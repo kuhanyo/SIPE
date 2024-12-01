@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Fondo_portada.jpg",
+      "PackagePath": "staticwebassets\\img\\Fondo_portada.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Sipe_Blanco.jpg",
+      "PackagePath": "staticwebassets\\img\\Sipe_Blanco.jpg"
+    },
+    {
       "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

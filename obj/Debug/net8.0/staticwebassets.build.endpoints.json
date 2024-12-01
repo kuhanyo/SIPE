@@ -249,6 +249,170 @@
       ]
     },
     {
+      "Route": "img/Fondo_portada.9qs6cl1k73.jpg",
+      "AssetFile": "img/Fondo_portada.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DxkZxuTGMRqtK3tIw49HR82zm/LOCkItr1FqlU83ED0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 08:02:32 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9qs6cl1k73"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DxkZxuTGMRqtK3tIw49HR82zm/LOCkItr1FqlU83ED0="
+        },
+        {
+          "Name": "label",
+          "Value": "img/Fondo_portada.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "img/Fondo_portada.jpg",
+      "AssetFile": "img/Fondo_portada.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DxkZxuTGMRqtK3tIw49HR82zm/LOCkItr1FqlU83ED0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 08:02:32 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DxkZxuTGMRqtK3tIw49HR82zm/LOCkItr1FqlU83ED0="
+        }
+      ]
+    },
+    {
+      "Route": "img/Sipe_Blanco.3dw10ih5jg.jpg",
+      "AssetFile": "img/Sipe_Blanco.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6419"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FzJbMMS7ThEYPcLTizzH0bpZzJg2IzhhhhPP9O5tqEU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 08:02:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3dw10ih5jg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FzJbMMS7ThEYPcLTizzH0bpZzJg2IzhhhhPP9O5tqEU="
+        },
+        {
+          "Name": "label",
+          "Value": "img/Sipe_Blanco.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "img/Sipe_Blanco.jpg",
+      "AssetFile": "img/Sipe_Blanco.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6419"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FzJbMMS7ThEYPcLTizzH0bpZzJg2IzhhhhPP9O5tqEU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 08:02:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FzJbMMS7ThEYPcLTizzH0bpZzJg2IzhhhhPP9O5tqEU="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "js/site.js",
       "Selectors": [],

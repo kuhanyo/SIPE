@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <!-- Header del login -->
+                <div class="card-header text-center bg-success text-white">
+                    <img src="https://comunicacioninstitucional.uabc.mx/wp-content/uploads/2024/03/escudo-actualizado-2022-w1000px-751x1024.png"
+                         alt="Logo UABC" style="max-height: 80px; margin-bottom: 10px;">
+                    <h3>UNIVERSIDAD AUTÓNOMA DE BAJA CALIFORNIA</h3>
+                    <h5>SIPE - Seguimiento de Potenciales a Egresar</h5>
+                </div>
+                <!-- Body del formulario -->
+                <div class="card-body">
+                    <form>
+                        <!-- Dirección de correo -->
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Dirección de correo:</label>
+                            <input type="email" class="form-control" id="correo" >
+                        </div>
+                        <!-- Contraseña -->
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                        </div>
+                        <!-- Botón Acceder -->
+                        <div class="d-grid gap-2">
+                            <a href="/Home/Inicio" class="btn btn-primary btn-lg">Iniciar Sesión</a>
+                        </div>
+                    </form>
+
+        </div>
+    </div>
+</div>

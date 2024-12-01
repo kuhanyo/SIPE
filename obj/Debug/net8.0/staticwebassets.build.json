@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fRg7hN9ExwmaT/H03qMnQOQhmOvPHjoNRnxbTgi2oMY=",
+  "Hash": "fa2GEP6pmCC5Id6KstQjMpMA3dpnjQpDEBya3ZeW7uw=",
   "Source": "SIPE",
   "BasePath": "_content/SIPE",
   "Mode": "Default",
@@ -99,6 +99,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Fondo_portada.jpg",
+      "SourceId": "SIPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\",
+      "BasePath": "_content/SIPE",
+      "RelativePath": "img/Fondo_portada#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9qs6cl1k73",
+      "Integrity": "DxkZxuTGMRqtK3tIw49HR82zm/LOCkItr1FqlU83ED0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Fondo_portada.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Sipe_Blanco.jpg",
+      "SourceId": "SIPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\",
+      "BasePath": "_content/SIPE",
+      "RelativePath": "img/Sipe_Blanco#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3dw10ih5jg",
+      "Integrity": "FzJbMMS7ThEYPcLTizzH0bpZzJg2IzhhhhPP9O5tqEU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Sipe_Blanco.jpg"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\js\\site.js",
@@ -1481,6 +1523,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "img/Fondo_portada.9qs6cl1k73.jpg",
+      "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Fondo_portada.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DxkZxuTGMRqtK3tIw49HR82zm/LOCkItr1FqlU83ED0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 08:02:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9qs6cl1k73"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Fondo_portada.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DxkZxuTGMRqtK3tIw49HR82zm/LOCkItr1FqlU83ED0="
+        }
+      ]
+    },
+    {
+      "Route": "img/Fondo_portada.jpg",
+      "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Fondo_portada.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DxkZxuTGMRqtK3tIw49HR82zm/LOCkItr1FqlU83ED0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 08:02:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DxkZxuTGMRqtK3tIw49HR82zm/LOCkItr1FqlU83ED0="
+        }
+      ]
+    },
+    {
+      "Route": "img/Sipe_Blanco.3dw10ih5jg.jpg",
+      "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Sipe_Blanco.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6419"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FzJbMMS7ThEYPcLTizzH0bpZzJg2IzhhhhPP9O5tqEU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 08:02:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3dw10ih5jg"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Sipe_Blanco.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FzJbMMS7ThEYPcLTizzH0bpZzJg2IzhhhhPP9O5tqEU="
+        }
+      ]
+    },
+    {
+      "Route": "img/Sipe_Blanco.jpg",
+      "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Sipe_Blanco.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6419"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FzJbMMS7ThEYPcLTizzH0bpZzJg2IzhhhhPP9O5tqEU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 08:02:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FzJbMMS7ThEYPcLTizzH0bpZzJg2IzhhhhPP9O5tqEU="
         }
       ]
     },

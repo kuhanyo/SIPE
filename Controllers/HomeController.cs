@@ -17,6 +17,11 @@ namespace SIPE.Controllers
             _sqlHelper = sqlHelper;
         }
 
+        public IActionResult Login()
+        {
+            return View();
+        }
+
         public IActionResult Inicio()
         {
             return View();
