@@ -1,7 +1,8 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\img\Fondo_portada.jpg
-wwwroot\img\Sipe_Blanco.jpg
+wwwroot\img\SIPE_blanco.png
+wwwroot\img\SIPE_blanco-removebg-preview.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

@@ -17,8 +17,12 @@
       "PackagePath": "staticwebassets\\img\\Fondo_portada.jpg"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Sipe_Blanco.jpg",
-      "PackagePath": "staticwebassets\\img\\Sipe_Blanco.jpg"
+      "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\SIPE_blanco-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\SIPE_blanco-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\SIPE_blanco.png",
+      "PackagePath": "staticwebassets\\img\\SIPE_blanco.png"
     },
     {
       "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\js\\site.js",
