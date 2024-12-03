@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tgW/1CBiihWM1vS+jCsSYPWzJBO/AaZPrQZFxyryF+o=",
+  "Hash": "5ywTgYJTUr6i9dDdfX2royzj33ejCF5yNnOXikI6dDQ=",
   "Source": "SIPE",
   "BasePath": "_content/SIPE",
   "Mode": "Default",
@@ -120,27 +120,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Fondo_portada.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\SIPE_blanco.png",
-      "SourceId": "SIPE",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\",
-      "BasePath": "_content/SIPE",
-      "RelativePath": "img/SIPE_blanco#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "wgpvgvs2v2",
-      "Integrity": "sL6zwd15jPA5y6kI6M/5CiOMgh8IgyOvyhhvdqSkKEM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\SIPE_blanco.png"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\SIPE_blanco-removebg-preview.png",
@@ -1626,88 +1605,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-DxkZxuTGMRqtK3tIw49HR82zm/LOCkItr1FqlU83ED0="
-        }
-      ]
-    },
-    {
-      "Route": "img/SIPE_blanco.png",
-      "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\SIPE_blanco.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16243"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"sL6zwd15jPA5y6kI6M/5CiOMgh8IgyOvyhhvdqSkKEM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 01 Dec 2024 21:22:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-sL6zwd15jPA5y6kI6M/5CiOMgh8IgyOvyhhvdqSkKEM="
-        }
-      ]
-    },
-    {
-      "Route": "img/SIPE_blanco.wgpvgvs2v2.png",
-      "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\SIPE_blanco.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16243"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"sL6zwd15jPA5y6kI6M/5CiOMgh8IgyOvyhhvdqSkKEM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 01 Dec 2024 21:22:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "wgpvgvs2v2"
-        },
-        {
-          "Name": "label",
-          "Value": "img/SIPE_blanco.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-sL6zwd15jPA5y6kI6M/5CiOMgh8IgyOvyhhvdqSkKEM="
         }
       ]
     },

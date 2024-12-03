@@ -21,10 +21,6 @@
       "PackagePath": "staticwebassets\\img\\SIPE_blanco-removebg-preview.png"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\SIPE_blanco.png",
-      "PackagePath": "staticwebassets\\img\\SIPE_blanco.png"
-    },
-    {
       "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
