@@ -43,9 +43,34 @@
         </div>
         <div class="row g-3 mt-3">
             <div class="col-md-3">
-                <label class="fw-bold">Género:</label>
-                <input type="text" class="form-control" placeholder="Género">
+                <label class="fw-bold" for="sexoDropdown">Sexo:</label>
+                <select id="sexoDropdown" class="form-select">
+                    <option value="">Selecciona el sexo</option>
+                </select>
             </div>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $.ajax({
+                        url: "/Home/GetSexo",
+                        type: "POST",
+                        success: function (data) {
+                            // Limpia el ComboBox
+                            $("#sexoDropdown").empty();
+                            $("#sexoDropdown").append('<option value="">Selecciona el sexo</option>');
+
+                            // Llena el ComboBox con los datos de países
+                            data.forEach(function (sexo) {
+                                $("#sexoDropdown").append(`<option value="${sexo.nombre}">${sexo.nombre}</option>`);
+                            });
+                        },
+                        error: function (xhr, status, error) {
+                            console.error("Error al cargar el sexo:", error);
+                        }
+                    });
+                })
+            </script>
             <div class="col-md-3">
                 <label class="fw-bold">Nacionalidad:</label>
                 <input type="text" class="form-control" placeholder="Nacionalidad">
@@ -60,10 +85,37 @@
             </div>
         </div>
         <div class="row g-3 mt-3">
+
             <div class="col-md-3">
-                <label class="fw-bold">País de origen:</label>
-                <input type="text" class="form-control" placeholder="País de origen">
+                <label class="fw-bold" for="countryDropdown">País de origen:</label>
+                <select id="countryDropdown" class="form-select">
+                    <option value="">Selecciona un país</option>
+                </select>
             </div>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+            <script>
+                $(document).ready(function () {
+                    $.ajax({
+                        url: "/Home/GetCountries",
+                        type: "POST",
+                        success: function (data) {
+                            // Limpia el ComboBox
+                            $("#countryDropdown").empty();
+                            $("#countryDropdown").append('<option value="">Selecciona un país</option>');
+
+                            // Llena el ComboBox con los datos de países
+                            data.forEach(function (country) {
+                                $("#countryDropdown").append(`<option value="${country.nombre}">${country.nombre}</option>`);
+                            });
+                        },
+                        error: function (xhr, status, error) {
+                            console.error("Error al cargar países:", error);
+                        }
+                    });
+                })
+            </script>
+
             <div class="col-md-3">
                 <label class="fw-bold">Teléfono de celular:</label>
                 <input type="text" class="form-control" placeholder="Teléfono de celular">
