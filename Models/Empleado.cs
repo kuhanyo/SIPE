@@ -1,10 +1,13 @@
 ﻿namespace SIPE.Models
 {
-    public class Empleado
+    public class Country
     {
-        public int NumeroEmpleado { get; set; }
         public string Nombre { get; set; }
-        public string Correo { get; set; }
     }
+    public class Sexo
+    {
+        public string Nombre { get; set; }
+    }
+
 
 }

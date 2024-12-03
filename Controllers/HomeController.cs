@@ -3,6 +3,7 @@ using SIPE.Models;
 using System.Data;
 using System.Diagnostics;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 
 namespace SIPE.Controllers
 {
@@ -43,26 +44,45 @@ namespace SIPE.Controllers
         }
 
         [HttpPost]
-        public IActionResult GetEmpleados()
+        public IActionResult GetCountries()
         {
-            var empleados = new List<Empleado>();
+            var countries = new List<Country>();
 
-            // Llama al stored procedure 
-            var dt = _sqlHelper.ExecuteStoredProcedure("spSELECT_Prueba");
+            // Llama al stored procedure
+            var dt = _sqlHelper.ExecuteStoredProcedure("spSELECT_ConsultaPais");
 
-            // Mapea el DataTable a una lista de empleados
+            // Mapea el DataTable a una lista de países
             foreach (DataRow row in dt.Rows)
             {
-                empleados.Add(new Empleado
+                countries.Add(new Country
                 {
-                    NumeroEmpleado = Convert.ToInt32(row["numero_empleado"]),
-                    Nombre = row["nombre"].ToString(),
-                    Correo = row["correo"].ToString()
+                    Nombre = row["Nombre"].ToString()
                 });
             }
 
-            // Retorna la lista de empleados como JSON
-            return Json(empleados);
+            // Retorna la lista de países como JSON
+            return Json(countries);
         }
+
+        public IActionResult GetSexo()
+        {
+            var sexo = new List<Sexo>();
+
+            // Llama al stored procedure
+            var dt = _sqlHelper.ExecuteStoredProcedure("spSELECT_ConsultaSexo");
+
+            // Mapea el DataTable a una lista de países
+            foreach (DataRow row in dt.Rows)
+            {
+                sexo.Add(new Sexo
+                {
+                    Nombre = row["Nombre"].ToString()
+                });
+            }
+
+            // Retorna la lista de países como JSON
+            return Json(sexo);
+        }
+
     }
 }

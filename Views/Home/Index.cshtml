@@ -43,26 +43,82 @@
         </div>
         <div class="row g-3 mt-3">
             <div class="col-md-3">
-                <label class="fw-bold">Sexo:</label>
-                <input type="text" class="form-control" placeholder="Sexo">
+                <label class="fw-bold" for="sexoDropdown">Sexo:</label>
+                <select id="sexoDropdown" class="form-select">
+                    <option value="">Selecciona el sexo</option>
+                </select>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $.ajax({
+                        url: "/Home/GetSexo",
+                        type: "POST",
+                        success: function (data) {
+                            // Limpia el ComboBox
+                            $("#sexoDropdown").empty();
+                            $("#sexoDropdown").append('<option value="">Selecciona el sexo</option>');
+
+                            // Llena el ComboBox con los datos de países
+                            data.forEach(function (sexo) {
+                                $("#sexoDropdown").append(`<option value="${sexo.nombre}">${sexo.nombre}</option>`);
+                            });
+                        },
+                        error: function (xhr, status, error) {
+                            console.error("Error al cargar el sexo:", error);
+                        }
+                    });
+                })
+            </script>
+            <div class="col-md-3">
+                <label class="fw-bold">Nacionalidad:</label>
+                <input type="text" class="form-control" placeholder="Nacionalidad">
             </div>
             <div class="col-md-3">
                 <label class="fw-bold">Estado civil:</label>
                 <input type="text" class="form-control" placeholder="Estado civil">
             </div>
             <div class="col-md-3">
-                <label class="fw-bold">Fecha de nacimiento:</label>
-                <input type="text" class="form-control" placeholder="Fecha de nacimiento">
-            </div>
-            <div class="col-md-3">
-                <label class="fw-bold">Teléfono de celular:</label>
-                <input type="text" class="form-control" placeholder="Teléfono de celular">
+                <label class="fw-bold">Teléfono de casa:</label>
+                <input type="text" class="form-control" placeholder="Teléfono de casa">
             </div>
         </div>
         <div class="row g-3 mt-3">
+
             <div class="col-md-3">
-                <label class="fw-bold">Teléfono de casa:</label>
-                <input type="text" class="form-control" placeholder="Teléfono de casa">
+                <label class="fw-bold" for="countryDropdown">País de origen:</label>
+                <select id="countryDropdown" class="form-select">
+                    <option value="">Selecciona un país</option>
+                </select>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+            <script>
+                $(document).ready(function () {
+                    $.ajax({
+                        url: "/Home/GetCountries",
+                        type: "POST",
+                        success: function (data) {
+                            // Limpia el ComboBox
+                            $("#countryDropdown").empty();
+                            $("#countryDropdown").append('<option value="">Selecciona un país</option>');
+
+                            // Llena el ComboBox con los datos de países
+                            data.forEach(function (country) {
+                                $("#countryDropdown").append(`<option value="${country.nombre}">${country.nombre}</option>`);
+                            });
+                        },
+                        error: function (xhr, status, error) {
+                            console.error("Error al cargar países:", error);
+                        }
+                    });
+                })
+            </script>
+
+            <div class="col-md-3">
+                <label class="fw-bold">Teléfono de celular:</label>
+                <input type="text" class="form-control" placeholder="Teléfono de celular">
             </div>
             <div class="col-md-3">
                 <label class="fw-bold">Discapacidad:</label>
@@ -83,32 +139,20 @@
     <section class="mb-5">
         <h3 class="text-center mb-4">Lugar de Nacimiento</h3>
         <div class="row g-3">
-            <!-- País -->
             <div class="col-md-4">
-                <label class="fw-bold" for="paisNacimiento">País:</label>
-                <select class="form-select" id="paisNacimiento">
-                    <option selected>Selecciona un país</option>
-                    <option value="mexico">México</option>
-                    <option value="usa">Estados Unidos</option>
-                    <option value="canada">Canadá</option>
-                    <option value="espana">España</option>
-                    <option value="francia">Francia</option>
-                    <option value="otro">Otro</option>
-                </select>
+                <label class="fw-bold">Fecha de nacimiento:</label>
+                <input type="text" class="form-control" placeholder="Fecha de nacimiento">
             </div>
-            <!-- Estado -->
             <div class="col-md-4">
-                <label class="fw-bold" for="estado">Estado:</label>
-                <input type="text" class="form-control" id="estado" placeholder="Estado">
+                <label class="fw-bold">Municipio:</label>
+                <input type="text" class="form-control" placeholder="Municipio">
             </div>
-            <!-- Municipio -->
             <div class="col-md-4">
-                <label class="fw-bold" for="municipio">Municipio:</label>
-                <input type="text" class="form-control" id="municipio" placeholder="Municipio">
+                <label class="fw-bold">Estado:</label>
+                <input type="text" class="form-control" placeholder="Estado">
             </div>
         </div>
     </section>
-
 
     <!-- Sección 3: Datos Escolares -->
     <section class="mb-5">
@@ -158,34 +202,69 @@
         </div>
     </section>
 
+
+    <!-- Sección 5: Idiomas -->
     <section class="mb-5">
         <h3 class="text-center mb-4">Idiomas</h3>
-        <div id="idiomasContainer">
-            <div class="row g-2 align-items-center idioma-row">
-                <div class="col-md-5">
-                    <select class="form-select idioma-select" required>
-                        <option value="" selected disabled>Idioma</option>
-                        <option value="Inglés">Inglés</option>
-                        <option value="Español">Español</option>
-                        <option value="Francés">Francés</option>
-                        <option value="Alemán">Alemán</option>
-                    </select>
+        <p class="text-center">Indica el porcentaje de idioma extranjero</p>
+        <div class="row g-3 justify-content-center">
+            <!-- Primera columna -->
+            <div class="col-md-6">
+                <div class="row g-2 align-items-center">
+                    <div class="col-md-6">
+                        <label class="fw-bold" for="ingles">Inglés:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="ingles" placeholder="%">
+                    </div>
                 </div>
-                <div class="col-md-5">
-                    <select class="form-select nivel-select" required>
-                        <option value="" selected disabled>Nivel</option>
-                        <option value="Básico">Básico</option>
-                        <option value="Intermedio">Intermedio</option>
-                        <option value="Avanzado">Avanzado</option>
-                    </select>
+                <div class="row g-2 align-items-center mt-2">
+                    <div class="col-md-6">
+                        <label class="fw-bold" for="frances">Francés:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="frances" placeholder="%">
+                    </div>
                 </div>
-                <div class="col-md-2 text-end">
-                    <button type="button" class="btn btn-danger btn-sm eliminar-idioma" onclick="eliminarIdioma(this)" disabled>-</button>
+                <div class="row g-2 align-items-center mt-2">
+                    <div class="col-md-6">
+                        <label class="fw-bold" for="italiano">Italiano:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="italiano" placeholder="%">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="mt-3">
-            <a href="#" class="text-primary" onclick="agregarIdioma()">Agregar otro idioma</a>
+            <!-- Segunda columna -->
+            <div class="col-md-6">
+                <div class="row g-2 align-items-center">
+                    <div class="col-md-6">
+                        <label class="fw-bold" for="japones">Japonés:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="japones" placeholder="%">
+                    </div>
+                </div>
+                <div class="row g-2 align-items-center mt-2">
+                    <div class="col-md-6">
+                        <label class="fw-bold" for="chino">Chino:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="chino" placeholder="%">
+                    </div>
+                </div>
+                <div class="row g-2 align-items-center mt-2">
+                    <div class="col-md-6">
+                        <label class="fw-bold" for="nombreOtro">Otro:</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="nombreOtro" placeholder="Idioma">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="porcentajeOtro" placeholder="% ">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -226,14 +305,18 @@
                     <input type="text" class="form-control" placeholder="Jefe inmediato">
                 </div>
                 <div class="col-md-4">
-                    <label class="fw-bold">Antigüedad:</label>
-                    <input type="text" class="form-control" placeholder="Antigüedad">
+                    <label class="fw-bold">Años laborados:</label>
+                    <input type="text" class="form-control" placeholder="Años laborados">
                 </div>
             </div>
             <div class="row g-3 mt-3">
                 <div class="col-md-6">
-                    <label class="fw-bold">Correo del Jefe:</label>
-                    <input type="email" class="form-control" placeholder="Correo del Jefe">
+                    <label class="fw-bold">Correo Jefe:</label>
+                    <input type="text" class="form-control" placeholder="Correo Jefe">
+                </div>
+                <div class="col-md-6">
+                    <label class="fw-bold">Teléfono Jefe:</label>
+                    <input type="text" class="form-control" placeholder="Teléfono Jefe">
                 </div>
             </div>
         </div>
@@ -276,86 +359,4 @@
             datosLaborales.style.display = 'none';
         }
     }
-</script>
-
-<script>
-    function agregarIdioma() {
-        const idiomasContainer = document.getElementById('idiomasContainer');
-        const idiomaRows = idiomasContainer.querySelectorAll('.idioma-row');
-        let canAdd = true;
-
-        // Validar que todos los combobox tengan valores seleccionados
-        idiomaRows.forEach(row => {
-            const idiomaSelect = row.querySelector('.idioma-select');
-            const nivelSelect = row.querySelector('.nivel-select');
-            if (!idiomaSelect.value || !nivelSelect.value) {
-                canAdd = false;
-            }
-        });
-
-        if (!canAdd) {
-            alert('Por favor, selecciona un idioma y un nivel antes de agregar otro.');
-            return;
-        }
-
-        // Crear un nuevo conjunto de combobox
-        const newRow = document.createElement('div');
-        newRow.className = 'row g-2 align-items-center idioma-row';
-        newRow.innerHTML = `
-            <div class="col-md-5">
-                <select class="form-select idioma-select" required>
-                    <option value="" selected disabled>Idioma</option>
-                    <option value="Inglés">Inglés</option>
-                    <option value="Español">Español</option>
-                    <option value="Francés">Francés</option>
-                    <option value="Alemán">Alemán</option>
-                </select>
-            </div>
-            <div class="col-md-5">
-                <select class="form-select nivel-select" required>
-                    <option value="" selected disabled>Nivel</option>
-                    <option value="Básico">Básico</option>
-                    <option value="Intermedio">Intermedio</option>
-                    <option value="Avanzado">Avanzado</option>
-                </select>
-            </div>
-            <div class="col-md-2 text-end">
-                <button type="button" class="btn btn-danger btn-sm eliminar-idioma" onclick="eliminarIdioma(this)">-</button>
-            </div>
-        `;
-        idiomasContainer.appendChild(newRow);
-
-        // Habilitar botones de eliminar en todas las filas excepto la primera
-        idiomaRows.forEach(row => {
-            const eliminarBtn = row.querySelector('.eliminar-idioma');
-            if (eliminarBtn) eliminarBtn.disabled = false;
-        });
-    }
-
-    function eliminarIdioma(button) {
-        const idiomasContainer = document.getElementById('idiomasContainer');
-        const idiomaRows = idiomasContainer.querySelectorAll('.idioma-row');
-
-        if (idiomaRows.length > 1) {
-            const rowToDelete = button.closest('.idioma-row');
-            idiomasContainer.removeChild(rowToDelete);
-
-            // Si solo queda un conjunto, deshabilitar el botón de eliminar
-            if (idiomasContainer.querySelectorAll('.idioma-row').length === 1) {
-                const remainingRow = idiomasContainer.querySelector('.idioma-row');
-                const eliminarBtn = remainingRow.querySelector('.eliminar-idioma');
-                if (eliminarBtn) eliminarBtn.disabled = true;
-            }
-        }
-    }
-
-    // Inicialmente deshabilitar el botón de eliminar si hay solo un conjunto
-    document.addEventListener('DOMContentLoaded', () => {
-        const idiomasContainer = document.getElementById('idiomasContainer');
-        const idiomaRows = idiomasContainer.querySelectorAll('.idioma-row');
-        if (idiomaRows.length === 1) {
-            const eliminarBtn = idiomaRows[0].querySelector('.eliminar-idioma');
-            if (eliminarBtn) eliminarBtn.disabled = true;
-        }
-    });
 </script>
