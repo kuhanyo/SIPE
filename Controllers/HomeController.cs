@@ -139,7 +139,7 @@ namespace SIPE.Controllers
                 });
             }
 
-            // Retorna la lista de países como JSON
+            // Retorna la lista de Estado Civiles como JSON
             return Json(estadocivil);
         }
         public IActionResult GetCapacidadEspecial()
