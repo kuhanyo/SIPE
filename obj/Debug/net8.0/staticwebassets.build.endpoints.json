@@ -331,6 +331,170 @@
       ]
     },
     {
+      "Route": "img/Logo Sipe.kkfi1so0zk.png",
+      "AssetFile": "img/Logo Sipe.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9587"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rM/iIJSBuQzWsRXad/TjepFg07matcg6glVQHVN+Zak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:41:33 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kkfi1so0zk"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rM/iIJSBuQzWsRXad/TjepFg07matcg6glVQHVN+Zak="
+        },
+        {
+          "Name": "label",
+          "Value": "img/Logo Sipe.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/Logo Sipe.png",
+      "AssetFile": "img/Logo Sipe.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9587"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rM/iIJSBuQzWsRXad/TjepFg07matcg6glVQHVN+Zak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:41:33 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rM/iIJSBuQzWsRXad/TjepFg07matcg6glVQHVN+Zak="
+        }
+      ]
+    },
+    {
+      "Route": "img/Nuevo logo UABC.png",
+      "AssetFile": "img/Nuevo logo UABC.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "741598"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BFja61Vlih9PHlxe3xpqFIt6zhlwSvCw9TL/D1Nwmtk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:46:18 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BFja61Vlih9PHlxe3xpqFIt6zhlwSvCw9TL/D1Nwmtk="
+        }
+      ]
+    },
+    {
+      "Route": "img/Nuevo logo UABC.si6ck2xjke.png",
+      "AssetFile": "img/Nuevo logo UABC.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "741598"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BFja61Vlih9PHlxe3xpqFIt6zhlwSvCw9TL/D1Nwmtk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:46:18 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "si6ck2xjke"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BFja61Vlih9PHlxe3xpqFIt6zhlwSvCw9TL/D1Nwmtk="
+        },
+        {
+          "Name": "label",
+          "Value": "img/Nuevo logo UABC.png"
+        }
+      ]
+    },
+    {
       "Route": "img/SIPE_blanco-removebg-preview.ddtkctu05g.png",
       "AssetFile": "img/SIPE_blanco-removebg-preview.png",
       "Selectors": [],
@@ -409,6 +573,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-sdGvhPPmGV0EcVvpUA8hHXQoFjfWr/M/TUmecxXx8bY="
+        }
+      ]
+    },
+    {
+      "Route": "img/exit.acuckmk95b.png",
+      "AssetFile": "img/exit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8495"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mlBCFuFVOvFIHZuDaJzyotpp99PI6V+5TPo62sBt/OA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:41:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "acuckmk95b"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mlBCFuFVOvFIHZuDaJzyotpp99PI6V+5TPo62sBt/OA="
+        },
+        {
+          "Name": "label",
+          "Value": "img/exit.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/exit.png",
+      "AssetFile": "img/exit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8495"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mlBCFuFVOvFIHZuDaJzyotpp99PI6V+5TPo62sBt/OA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:41:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mlBCFuFVOvFIHZuDaJzyotpp99PI6V+5TPo62sBt/OA="
+        }
+      ]
+    },
+    {
+      "Route": "img/potenciales.jl44gcynst.png",
+      "AssetFile": "img/potenciales.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2098497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R5CEPn2GD7k/NzIvPhwMb6NAwwA3U85kPWHk5Wt+SI0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:41:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jl44gcynst"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R5CEPn2GD7k/NzIvPhwMb6NAwwA3U85kPWHk5Wt+SI0="
+        },
+        {
+          "Name": "label",
+          "Value": "img/potenciales.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/potenciales.png",
+      "AssetFile": "img/potenciales.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2098497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R5CEPn2GD7k/NzIvPhwMb6NAwwA3U85kPWHk5Wt+SI0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:41:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R5CEPn2GD7k/NzIvPhwMb6NAwwA3U85kPWHk5Wt+SI0="
         }
       ]
     },

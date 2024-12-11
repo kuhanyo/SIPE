@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SIPE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+557fd8f7424a8c415d4aa7a43a4267499a121887")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b49805b590058cc4132887a746b663e5fe5c74e")]
 [assembly: System.Reflection.AssemblyProductAttribute("SIPE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SIPE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

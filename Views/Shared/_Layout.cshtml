@@ -7,25 +7,52 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SIPE.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            font-family: 'Minion Pro', Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #F2F2F2;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: #B08208;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        .escudo-uabc {
+            position: absolute;
+            top: 50%;
+            right: 100px;
+            transform: translateY(-50%);
+        }
+
+        .escudo-sipe {
+            width: 85px;
+            height: 50px;
+        }
+
+        .boton-cerrar {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
 </head>
-<body>
+<body class="d-flex flex-column vh-100">
     <header>
         @if (ViewData["Title"] != null && ViewData["Title"].ToString() == "Login")
         {
-            <!-- Header específico para el Login -->
-            <nav class="navbar  text-white p-3 position-relative">
-                <!-- Imagen de fondo (Pleca Cuadrangular) -->
-                <img src="https://i.ibb.co/CJkRzSH/Pleca-Cuadrangular.png"
-                     alt="Pleca Cuadrangular" class="w-30" style="max-height: 80px;">
-                <!-- Logos posicionados encima de la pleca -->
-                <div class="position-absolute top-50 start-0 translate-middle-y d-flex align-items-center" style="margin-left: 20px;">
-                    <!-- Logo SIPE y texto -->
-                    <div class="d-flex align-items-center">
-                        <img src="~/img/SIPE_blanco-removebg-preview.png" alt="Logo SIPE" style="max-height: 100px; margin-right: 10px;">
-                        <span style="font-size: 1.5rem; color: white; font-weight: bold;">SIPE</span>
-                    </div>
-                </div>
-            </nav>
+            <header class="header d-flex align-items-center p-3">
+                <img src="~/img/Logo Sipe.png" alt="Escudo SIPE" class="escudo-sipe me-3">
+                <h2 class="text-center flex-grow-1 m-0">Bienvenido al sistema de potenciales a egresar</h2>
+            </header>
         }
         else
         {
@@ -38,30 +65,35 @@
                         <span class="h5 text-dark mb-0">Cédula de Potencial a Egresar</span>
                         <span class="ms-3">Contacto</span>
                     </div>
-                    <div>
-                        <span class="text-secondary">Campus: Mexicali</span>
+                    <!-- Botón de Cerrar Sesión -->
+                    <div class="ms-auto">
+                        <a href="/Home/Login" class="d-flex align-items-center">
+                            <img src="~/img/exit.png" alt="Cerrar sesión" class="boton-cerrar">
+                        </a>
                     </div>
                 </div>
             </nav>
         }
     </header>
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    @if (ViewData["Title"] != null && ViewData["Title"].ToString() == "Login")
+    {
+
+        <!-- Logo UABC -->
+        <img src="~/img/Nuevo logo UABC.png" alt="Escudo UABC" class="escudo-uabc img-fluid" style="width: 300px; height: 400px;">
+    }
+
+    <!-- Main Content -->
+    <main class="flex-grow-1 d-flex justify-content-center align-items-center">
+        @RenderBody()
+    </main>
 
     <footer>
         @if (ViewData["Title"] != null && ViewData["Title"].ToString() == "Login")
         {
             <!-- Footer específico para el Login -->
-            <footer class="text-center" style="background-color: #B08208;">
-                <div class="p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                    <a href="https://correo.uabc.edu.mx" target="_blank" style="color: white; font-size: larger;">Correo UABC</a>
-                    <span class="mx-3 text-white" style="font-size: larger;">|</span>
-                    <a href="/privacy-policy" target="_blank" style="color: white; font-size: larger;">Política de Privacidad</a>
-                </div>
+            <footer class="footer text-center py-3 mt-auto" style="background-color: #B08208; color: white; font-weight: bold;">
+                UABC 2024
             </footer>
         }
         else

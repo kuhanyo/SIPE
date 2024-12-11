@@ -6,18 +6,17 @@
     string periodoEgreso = "2025-2"; // Ejemplo de datos obtenidos de la base de datos
 }
 
+
 <div class="container-fluid">
 
     <!-- Sección: Periodo de ingreso y egreso -->
     <section class="mt-4 mb-5">
-        <div class="row g-3">
-            <!-- Periodo de ingreso -->
-            <div class="col-md-6 text-start">
+        <div class="row g-4">
+            <div class="col-md-6">
                 <label class="fw-bold">Periodo de ingreso:</label>
                 <p class="form-control-plaintext border rounded p-2 bg-light">@ViewData["PeriodoIngreso"]</p>
             </div>
-            <!-- Periodo de egreso -->
-            <div class="col-md-6 text-start">
+            <div class="col-md-6">
                 <label class="fw-bold">Periodo de egreso:</label>
                 <p class="form-control-plaintext border rounded p-2 bg-light">@ViewData["PeriodoEgreso"]</p>
             </div>
@@ -26,8 +25,8 @@
 
     <!-- Sección 1: Datos Personales -->
     <section class="mb-5">
-        <h3 class="text-center mb-4">Datos Personales</h3>
-        <div class="row g-3">
+        <h3 class="text-center mb-4 fw-bold">Datos Personales</h3>
+        <div class="row g-4">
             <div class="col-md-4">
                 <label class="fw-bold">Nombre:</label>
                 <input type="text" class="form-control" placeholder="Nombre" required>
@@ -41,7 +40,8 @@
                 <input type="text" class="form-control" placeholder="Apellido materno" required>
             </div>
         </div>
-        <div class="row g-3 mt-3">
+
+        <div class="row g-4 mt-3">
             <div class="col-md-3">
                 <label class="fw-bold" for="sexoDropdown">Sexo:</label>
                 <select id="sexoDropdown" class="form-select" required>
@@ -62,7 +62,7 @@
 
                             // Llena el ComboBox con los datos de países
                             data.forEach(function (sexo) {
-                                $("#sexoDropdown").append(`<option value="${sexo.nombre}">${sexo.nombre}</option>`);
+                                $("#sexoDropdown").append(<option value="${sexo.nombre}">${sexo.nombre}</option>);
                             });
                         },
                         error: function (xhr, status, error) {
@@ -72,49 +72,50 @@
                 })
             </script>
 
-                <div class="col-md-3">
-                    <label class="fw-bold" for="estadocivilDropdown">Estadocivil:</label>
-                    <select id="estadocivilDropdown" class="form-select" required>
-                        <option value="">Selecciona el estadocivil</option>
-                    </select>
-                </div>
+            <div class="col-md-3">
+                <label class="fw-bold" for="estadocivilDropdown">Estado civil:</label>
+                <select id="estadocivilDropdown" class="form-select" required>
+                    <option value="">Selecciona el estado civil</option>
+                </select>
+            </div>
 
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                <script>
-                    $(document).ready(function () {
-                        $.ajax({
-                            url: "/Home/GetEstadoCivil",
-                            type: "POST",
-                            success: function (data) {
-                                // Limpia el ComboBox
-                                $("#estadocivilDropdown").empty();
-                                $("#estadocivilDropdown").append('<option value="">Selecciona el estadocivil</option>');
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $.ajax({
+                        url: "/Home/GetEstadoCivil",
+                        type: "POST",
+                        success: function (data) {
+                            // Limpia el ComboBox
+                            $("#estadocivilDropdown").empty();
+                            $("#estadocivilDropdown").append('<option value="">Selecciona el estadocivil</option>');
 
-                                // Llena el ComboBox con los datos de países
-                                data.forEach(function (estadocivil) {
-                                    $("#estadocivilDropdown").append(`<option value="${estadocivil.descripción}">${estadocivil.descripción}</option>`);
-                                });
-                            },
-                            error: function (xhr, status, error) {
-                                console.error("Error al cargar el estadocivil:", error);
-                            }
-                        });
-                    })
-                </script>
+                            // Llena el ComboBox con los datos de estadociviles
+                            data.forEach(function (estadocivil) {
+                                $("#estadocivilDropdown").append(<option value="${estadocivil.descripción}">${estadocivil.descripción}</option>);
+                            });
+                        },
+                        error: function (xhr, status, error) {
+                            console.error("Error al cargar el estadocivil:", error);
+                        }
+                    });
+                })
+            </script>
 
             <div class="col-md-3">
                 <label class="fw-bold">Fecha de nacimiento:</label>
-                <input type="text" class="form-control" placeholder="Fecha de nacimiento" required>
+                <input type="date" class="form-control" required>
             </div>
             <div class="col-md-3">
                 <label class="fw-bold">Teléfono de celular:</label>
-                <input type="text" class="form-control" placeholder="Teléfono de celular" required>
+                <input type="tel" class="form-control" placeholder="Teléfono de celular" required>
             </div>
         </div>
-        <div class="row g-3 mt-3">
+
+        <div class="row g-4 mt-3">
             <div class="col-md-3">
                 <label class="fw-bold">Teléfono de casa:</label>
-                <input type="text" class="form-control" placeholder="Teléfono de casa" required>
+                <input type="tel" class="form-control" placeholder="Teléfono de casa" required>
             </div>
             <div class="col-md-3">
                 <label class="fw-bold">Discapacidad:</label>
@@ -133,8 +134,8 @@
 
     <!-- Sección 2: Lugar de Nacimiento -->
     <section class="mb-5">
-        <h3 class="text-center mb-4">Lugar de Nacimiento</h3>
-        <div class="row g-3">
+        <h3 class="text-center mb-4 fw-bold">Lugar de Nacimiento</h3>
+        <div class="row g-4">
             <!-- País -->
             <div class="col-md-3">
                 <label class="fw-bold" for="countryDropdown">País de origen:</label>
@@ -166,24 +167,21 @@
                 })
             </script>
 
-            <!-- Estado -->
             <div class="col-md-4">
-                <label class="fw-bold" for="estado">Estado:</label>
+                <label class="fw-bold">Estado:</label>
                 <input type="text" class="form-control" id="estado" placeholder="Estado" required>
             </div>
-            <!-- Municipio -->
             <div class="col-md-4">
-                <label class="fw-bold" for="municipio">Municipio:</label>
+                <label class="fw-bold">Municipio:</label>
                 <input type="text" class="form-control" id="municipio" placeholder="Municipio" required>
             </div>
         </div>
     </section>
 
-
     <!-- Sección 3: Datos Escolares -->
     <section class="mb-5">
-        <h3 class="text-center mb-4">Datos Escolares</h3>
-        <div class="row g-3">
+        <h3 class="text-center mb-4 fw-bold">Datos Escolares</h3>
+        <div class="row g-4">
             <div class="col-md-4">
                 <label class="fw-bold">Campus:</label>
                 <input type="text" class="form-control" placeholder="Campus" required>
@@ -201,8 +199,8 @@
 
     <!-- Sección 4: Domicilio -->
     <section class="mb-5">
-        <h3 class="text-center mb-4">Domicilio</h3>
-        <div class="row g-3">
+        <h3 class="text-center mb-4 fw-bold">Domicilio</h3>
+        <div class="row g-4">
             <div class="col-md-6">
                 <label class="fw-bold" for="calleNumero">Calle y número:</label>
                 <input type="text" class="form-control" id="calleNumero" placeholder="Calle y número" required>
@@ -216,7 +214,7 @@
                 <input type="text" class="form-control" id="codigoPostal" placeholder="Código Postal" required>
             </div>
         </div>
-        <div class="row g-3 mt-3">
+        <div class="row g-4 mt-3">
             <div class="col-md-6">
                 <label class="fw-bold" for="municipio">Municipio:</label>
                 <input type="text" class="form-control" id="municipio" placeholder="Municipio" required>
@@ -227,33 +225,30 @@
             </div>
         </div>
     </section>
-    <!-- Sección 5: Idiomas -->
+
+    <!-- Sección 2: Idiomas -->
     <section class="mb-5">
-        <h3 class="text-center mb-4">Idiomas</h3>
-
+        <h3 class="text-center mb-4 fw-bold">Idiomas</h3>
         <div id="idiomasContainer">
-            <div class="idioma-pair">
+            <div class="idioma-pair row g-3">
                 <div class="col-md-5">
-                    <label class="fw-bold" for="idiomaDropdown">Idioma:</label>
+                    <label class="fw-bold">Idioma:</label>
                     <select class="form-select idioma-select" required>
-                        <option value="" selected disabled>Selecciona un Idioma</option>
+                        <option value="" disabled selected>Selecciona un idioma</option>
                     </select>
                 </div>
-
                 <div class="col-md-5">
-                    <label class="fw-bold" for="idiomanivelDropdown">Nivel:</label>
+                    <label class="fw-bold">Nivel:</label>
                     <select class="form-select nivel-select" required>
-                        <option value="" selected disabled>Selecciona el Nivel</option>
+                        <option value="" disabled selected>Selecciona el nivel</option>
                     </select>
                 </div>
-
                 <div class="col-md-2 text-end">
                     <button type="button" class="btn btn-danger btn-sm eliminar-idioma" onclick="eliminarIdioma(this)">-</button>
                 </div>
             </div>
         </div>
-
-        <div class="mt-3">
+        <div class="mt-3 text-center">
             <a href="#" class="text-primary" onclick="agregarIdioma()">Agregar otro idioma</a>
         </div>
     </section>
@@ -261,73 +256,56 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
+            cargarOpciones('/Home/GetSexo', '#sexoDropdown', 'nombre');
+            cargarOpciones('/Home/GetEstadoCivil', '#estadocivilDropdown', 'descripción');
             cargarIdiomas();
             cargarNiveles();
         });
 
-        function cargarIdiomas() {
+        function cargarOpciones(url, selectId, key) {
             $.ajax({
-                url: "/Home/GetIdioma",
+                url: url,
                 type: "POST",
                 success: function (data) {
-                    // Llena los combobox con los datos de idioma
-                    $(".idioma-select").each(function () {
-                        $(this).empty();
-                        $(this).append('<option value="">Selecciona un Idioma</option>');
-                        data.forEach(function (idioma) {
-                            $(this).append(`<option value="${idioma.nombre}">${idioma.nombre}</option>`);
-                        }, this);
+                    $(selectId).empty().append('<option value="">Selecciona</option>');
+                    data.forEach(item => {
+                        $(selectId).append(`<option value="${item[key]}">${item[key]}</option>`);
                     });
                 },
                 error: function (xhr, status, error) {
-                    console.error("Error al cargar idioma:", error);
+                    console.error(`Error al cargar opciones de ${selectId}:`, error);
                 }
             });
         }
 
+        function cargarIdiomas() {
+            cargarOpciones('/Home/GetIdioma', '.idioma-select', 'nombre');
+        }
+
         function cargarNiveles() {
-            $.ajax({
-                url: "/Home/GetIdiomaNivel",
-                type: "POST",
-                success: function (data) {
-                    // Llena los combobox con los datos de nivel
-                    $(".nivel-select").each(function () {
-                        $(this).empty();
-                        $(this).append('<option value="">Selecciona el nivel</option>');
-                        data.forEach(function (idiomanivel) {
-                            $(this).append(`<option value="${idiomanivel.nivel}">${idiomanivel.nivel}</option>`);
-                        }, this);
-                    });
-                },
-                error: function (xhr, status, error) {
-                    console.error("Error al cargar IdiomaNivel:", error);
-                }
-            });
+            cargarOpciones('/Home/GetIdiomaNivel', '.nivel-select', 'nivel');
         }
 
         function agregarIdioma() {
             const nuevoIdiomaPair = `
-                <div class="idioma-pair">
+                <div class="idioma-pair row g-3 mt-2">
                     <div class="col-md-5">
-                        <label class="fw-bold" for="idiomaDropdown">Idioma:</label>
+                        <label class="fw-bold">Idioma:</label>
                         <select class="form-select idioma-select" required>
-                            <option value="" selected disabled>Selecciona un Idioma</option>
+                            <option value=""  selected>Selecciona un idioma</option>
                         </select>
                     </div>
-
                     <div class="col-md-5">
-                        <label class="fw-bold" for="idiomanivelDropdown">Nivel:</label>
+                        <label class="fw-bold">Nivel:</label>
                         <select class="form-select nivel-select" required>
-                            <option value="" selected disabled>Selecciona el Nivel</option>
+                            <option value=""  selected>Selecciona el nivel</option>
                         </select>
                     </div>
-
                     <div class="col-md-2 text-end">
                         <button type="button" class="btn btn-danger btn-sm eliminar-idioma" onclick="eliminarIdioma(this)">-</button>
                     </div>
-                </div>
-            `;
-            $("#idiomasContainer").append(nuevoIdiomaPair);
+                </div>`;
+            $('#idiomasContainer').append(nuevoIdiomaPair);
             cargarIdiomas();
             cargarNiveles();
         }
@@ -339,7 +317,7 @@
 
     <!-- Sección 6: Datos Laborales -->
     <section class="mb-5">
-        <h3 class="text-center mb-4">Datos Laborales</h3>
+        <h3 class="text-center mb-4 fw-bold">Datos Laborales</h3>
         <p class="text-center">
             ¿Trabajas actualmente?
             <input type="radio" id="trabajaSi" name="trabaja" value="si" onclick="toggleLaborales(true)">
@@ -348,9 +326,8 @@
             <label for="trabajaNo">No</label>
         </p>
 
-        <!-- Formulario de datos laborales -->
         <div id="datosLaborales" style="display: none;">
-            <div class="row g-3">
+            <div class="row g-4">
                 <div class="col-md-4">
                     <label class="fw-bold">Nombre de empresa:</label>
                     <input type="text" class="form-control" placeholder="Nombre de empresa">
@@ -361,10 +338,10 @@
                 </div>
                 <div class="col-md-4">
                     <label class="fw-bold">Teléfono:</label>
-                    <input type="text" class="form-control" placeholder="Teléfono">
+                    <input type="tel" class="form-control" placeholder="Teléfono">
                 </div>
             </div>
-            <div class="row g-3 mt-3">
+            <div class="row g-4 mt-3">
                 <div class="col-md-4">
                     <label class="fw-bold">Puesto:</label>
                     <input type="text" class="form-control" placeholder="Puesto">
@@ -378,7 +355,7 @@
                     <input type="text" class="form-control" placeholder="Antigüedad">
                 </div>
             </div>
-            <div class="row g-3 mt-3">
+            <div class="row g-4 mt-3">
                 <div class="col-md-6">
                     <label class="fw-bold">Correo del Jefe:</label>
                     <input type="email" class="form-control" placeholder="Correo del Jefe">
@@ -388,84 +365,85 @@
     </section>
 
     <!-- Botón de Registro -->
-    <div class="text-center">
+    <div class="text-center mt-4">
         <button class="btn btn-success btn-lg px-5" onclick="if(!validarFormulario()) return false;" data-bs-toggle="modal" data-bs-target="#registroModal">Registrar</button>
         <p class="mt-3 text-muted">*Todos los datos son obligatorios</p>
     </div>
+</div>
 
-    <script>
-        function validarFormulario() {
-            let esValido = true;
+<script>
+    function validarFormulario() {
+        let esValido = true;
 
-            // Validar campos generales obligatorios (inputs y selects con atributo required)
-            const camposObligatorios = document.querySelectorAll('input[required], select[required]');
-            camposObligatorios.forEach(campo => {
+        // Validar campos generales obligatorios (inputs y selects con atributo required)
+        const camposObligatorios = document.querySelectorAll('input[required], select[required]');
+        camposObligatorios.forEach(campo => {
+            if (!campo.value.trim()) {
+                esValido = false;
+                campo.classList.add('is-invalid'); // Agregar clase de error
+            } else {
+                campo.classList.remove('is-invalid'); // Quitar clase de error si ya tiene valor
+            }
+        });
+
+        // Validar datos laborales si el usuario seleccionó "Sí" en "¿Trabajas actualmente?"
+        const trabajaActualmente = document.querySelector('input[name="trabaja"]:checked').value;
+        if (trabajaActualmente === 'si') {
+            const camposLaborales = document.querySelectorAll('#datosLaborales input');
+            camposLaborales.forEach(campo => {
                 if (!campo.value.trim()) {
                     esValido = false;
                     campo.classList.add('is-invalid'); // Agregar clase de error
                 } else {
-                    campo.classList.remove('is-invalid'); // Quitar clase de error si ya tiene valor
+                    campo.classList.remove('is-invalid'); // Quitar clase de error
                 }
             });
-
-            // Validar datos laborales si el usuario seleccionó "Sí" en "¿Trabajas actualmente?"
-            const trabajaActualmente = document.querySelector('input[name="trabaja"]:checked').value;
-            if (trabajaActualmente === 'si') {
-                const camposLaborales = document.querySelectorAll('#datosLaborales input');
-                camposLaborales.forEach(campo => {
-                    if (!campo.value.trim()) {
-                        esValido = false;
-                        campo.classList.add('is-invalid'); // Agregar clase de error
-                    } else {
-                        campo.classList.remove('is-invalid'); // Quitar clase de error
-                    }
-                });
-            }
-
-            // Validar sección de idiomas
-            const idiomas = document.querySelectorAll('#idiomasContainer .idioma-pair');
-            idiomas.forEach(par => {
-                const idiomaSelect = par.querySelector('.idioma-select');
-                const nivelSelect = par.querySelector('.nivel-select');
-                if (!idiomaSelect.value || !nivelSelect.value) {
-                    esValido = false;
-                    if (!idiomaSelect.value) idiomaSelect.classList.add('is-invalid');
-                    if (!nivelSelect.value) nivelSelect.classList.add('is-invalid');
-                } else {
-                    idiomaSelect.classList.remove('is-invalid');
-                    nivelSelect.classList.remove('is-invalid');
-                }
-            });
-
-            // Mostrar alerta si hay errores
-            if (!esValido) {
-                alert('Por favor, completa todos los campos obligatorios marcados en rojo.');
-            }
-
-            return esValido; // Permitir o prevenir el envío del formulario
         }
 
-        function toggleLaborales(show) {
-            const datosLaborales = document.getElementById('datosLaborales');
-            if (show) {
-                datosLaborales.style.display = 'block';
+        // Validar sección de idiomas
+        const idiomas = document.querySelectorAll('#idiomasContainer .idioma-pair');
+        idiomas.forEach(par => {
+            const idiomaSelect = par.querySelector('.idioma-select');
+            const nivelSelect = par.querySelector('.nivel-select');
+            if (!idiomaSelect.value || !nivelSelect.value) {
+                esValido = false;
+                if (!idiomaSelect.value) idiomaSelect.classList.add('is-invalid');
+                if (!nivelSelect.value) nivelSelect.classList.add('is-invalid');
             } else {
-                datosLaborales.style.display = 'none';
-                // Limpiar errores de validación en los datos laborales
-                const camposLaborales = document.querySelectorAll('#datosLaborales input');
-                camposLaborales.forEach(campo => campo.classList.remove('is-invalid'));
+                idiomaSelect.classList.remove('is-invalid');
+                nivelSelect.classList.remove('is-invalid');
             }
-        }
-    </script>
+        });
 
-    <style>
-        .is-invalid {
-            border: 2px solid red !important; /* Resaltar campos incorrectos */
-            background-color: #ffe6e6; /* Fondo ligeramente rojizo */
+        // Mostrar alerta si hay errores
+        if (!esValido) {
+            alert('Por favor, completa todos los campos obligatorios marcados en rojo.');
         }
 
-            .is-invalid:focus {
-                outline: none;
-                box-shadow: 0 0 5px red; /* Resaltar con brillo al enfocarse */
-            }
-    </style>
+        return esValido; // Permitir o prevenir el envío del formulario
+    }
+
+    function toggleLaborales(show) {
+        const datosLaborales = document.getElementById('datosLaborales');
+        if (show) {
+            datosLaborales.style.display = 'block';
+        } else {
+            datosLaborales.style.display = 'none';
+            // Limpiar errores de validación en los datos laborales
+            const camposLaborales = document.querySelectorAll('#datosLaborales input');
+            camposLaborales.forEach(campo => campo.classList.remove('is-invalid'));
+        }
+    }
+</script>
+
+<style>
+    .is-invalid {
+        border: 2px solid red !important; /* Resaltar campos incorrectos */
+        background-color: #ffe6e6; /* Fondo ligeramente rojizo */
+    }
+
+        .is-invalid:focus {
+            outline: none;
+            box-shadow: 0 0 5px red; /* Resaltar con brillo al enfocarse */
+        }
+</style>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5ywTgYJTUr6i9dDdfX2royzj33ejCF5yNnOXikI6dDQ=",
+  "Hash": "b6oW/fSFjIQhRYvcEODEjLf29fG58kBYQsHBxPXDc8Y=",
   "Source": "SIPE",
   "BasePath": "_content/SIPE",
   "Mode": "Default",
@@ -101,6 +101,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\exit.png",
+      "SourceId": "SIPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\",
+      "BasePath": "_content/SIPE",
+      "RelativePath": "img/exit#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "acuckmk95b",
+      "Integrity": "mlBCFuFVOvFIHZuDaJzyotpp99PI6V+5TPo62sBt/OA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\exit.png"
+    },
+    {
       "Identity": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Fondo_portada.jpg",
       "SourceId": "SIPE",
       "SourceType": "Discovered",
@@ -120,6 +141,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Fondo_portada.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Logo Sipe.png",
+      "SourceId": "SIPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\",
+      "BasePath": "_content/SIPE",
+      "RelativePath": "img/Logo Sipe#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kkfi1so0zk",
+      "Integrity": "rM/iIJSBuQzWsRXad/TjepFg07matcg6glVQHVN+Zak=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Logo Sipe.png"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Nuevo logo UABC.png",
+      "SourceId": "SIPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\",
+      "BasePath": "_content/SIPE",
+      "RelativePath": "img/Nuevo logo UABC#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "si6ck2xjke",
+      "Integrity": "BFja61Vlih9PHlxe3xpqFIt6zhlwSvCw9TL/D1Nwmtk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Nuevo logo UABC.png"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\potenciales.png",
+      "SourceId": "SIPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\",
+      "BasePath": "_content/SIPE",
+      "RelativePath": "img/potenciales#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jl44gcynst",
+      "Integrity": "R5CEPn2GD7k/NzIvPhwMb6NAwwA3U85kPWHk5Wt+SI0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\potenciales.png"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\SIPE_blanco-removebg-preview.png",
@@ -1527,6 +1611,88 @@
       ]
     },
     {
+      "Route": "img/exit.acuckmk95b.png",
+      "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\exit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8495"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mlBCFuFVOvFIHZuDaJzyotpp99PI6V+5TPo62sBt/OA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:41:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "acuckmk95b"
+        },
+        {
+          "Name": "label",
+          "Value": "img/exit.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mlBCFuFVOvFIHZuDaJzyotpp99PI6V+5TPo62sBt/OA="
+        }
+      ]
+    },
+    {
+      "Route": "img/exit.png",
+      "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\exit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8495"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mlBCFuFVOvFIHZuDaJzyotpp99PI6V+5TPo62sBt/OA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:41:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mlBCFuFVOvFIHZuDaJzyotpp99PI6V+5TPo62sBt/OA="
+        }
+      ]
+    },
+    {
       "Route": "img/Fondo_portada.9qs6cl1k73.jpg",
       "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Fondo_portada.jpg",
       "Selectors": [],
@@ -1605,6 +1771,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-DxkZxuTGMRqtK3tIw49HR82zm/LOCkItr1FqlU83ED0="
+        }
+      ]
+    },
+    {
+      "Route": "img/Logo Sipe.kkfi1so0zk.png",
+      "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Logo Sipe.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9587"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rM/iIJSBuQzWsRXad/TjepFg07matcg6glVQHVN+Zak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:41:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kkfi1so0zk"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Logo Sipe.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rM/iIJSBuQzWsRXad/TjepFg07matcg6glVQHVN+Zak="
+        }
+      ]
+    },
+    {
+      "Route": "img/Logo Sipe.png",
+      "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Logo Sipe.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9587"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rM/iIJSBuQzWsRXad/TjepFg07matcg6glVQHVN+Zak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:41:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rM/iIJSBuQzWsRXad/TjepFg07matcg6glVQHVN+Zak="
+        }
+      ]
+    },
+    {
+      "Route": "img/Nuevo logo UABC.png",
+      "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Nuevo logo UABC.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "741598"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BFja61Vlih9PHlxe3xpqFIt6zhlwSvCw9TL/D1Nwmtk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:46:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BFja61Vlih9PHlxe3xpqFIt6zhlwSvCw9TL/D1Nwmtk="
+        }
+      ]
+    },
+    {
+      "Route": "img/Nuevo logo UABC.si6ck2xjke.png",
+      "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Nuevo logo UABC.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "741598"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BFja61Vlih9PHlxe3xpqFIt6zhlwSvCw9TL/D1Nwmtk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:46:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "si6ck2xjke"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Nuevo logo UABC.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BFja61Vlih9PHlxe3xpqFIt6zhlwSvCw9TL/D1Nwmtk="
+        }
+      ]
+    },
+    {
+      "Route": "img/potenciales.jl44gcynst.png",
+      "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\potenciales.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2098497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R5CEPn2GD7k/NzIvPhwMb6NAwwA3U85kPWHk5Wt+SI0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:41:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jl44gcynst"
+        },
+        {
+          "Name": "label",
+          "Value": "img/potenciales.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R5CEPn2GD7k/NzIvPhwMb6NAwwA3U85kPWHk5Wt+SI0="
+        }
+      ]
+    },
+    {
+      "Route": "img/potenciales.png",
+      "AssetFile": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\potenciales.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2098497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R5CEPn2GD7k/NzIvPhwMb6NAwwA3U85kPWHk5Wt+SI0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 18:41:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R5CEPn2GD7k/NzIvPhwMb6NAwwA3U85kPWHk5Wt+SI0="
         }
       ]
     },

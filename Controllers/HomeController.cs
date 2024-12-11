@@ -63,6 +63,7 @@ namespace SIPE.Controllers
             // Retorna la lista de países como JSON
             return Json(countries);
         }
+
         public IActionResult GetIdioma()
         {
             var idiomas = new List<Idioma>();

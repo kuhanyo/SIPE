@@ -1,6 +1,10 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\img\exit.png
 wwwroot\img\Fondo_portada.jpg
+wwwroot\img\Logo Sipe.png
+wwwroot\img\Nuevo logo UABC.png
+wwwroot\img\potenciales.png
 wwwroot\img\SIPE_blanco-removebg-preview.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

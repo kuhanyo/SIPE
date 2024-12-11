@@ -17,8 +17,24 @@
       "PackagePath": "staticwebassets\\img\\Fondo_portada.jpg"
     },
     {
+      "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Logo Sipe.png",
+      "PackagePath": "staticwebassets\\img\\Logo Sipe.png"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\Nuevo logo UABC.png",
+      "PackagePath": "staticwebassets\\img\\Nuevo logo UABC.png"
+    },
+    {
       "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\SIPE_blanco-removebg-preview.png",
       "PackagePath": "staticwebassets\\img\\SIPE_blanco-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\exit.png",
+      "PackagePath": "staticwebassets\\img\\exit.png"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\img\\potenciales.png",
+      "PackagePath": "staticwebassets\\img\\potenciales.png"
     },
     {
       "Id": "C:\\Users\\Usuario\\Pictures\\SIPE\\wwwroot\\js\\site.js",
